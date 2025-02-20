@@ -1,0 +1,41 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35818.85 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireAppSemanticKernel.AppHost", "AspireAppSemanticKernel.AppHost\AspireAppSemanticKernel.AppHost.csproj", "{DC7E3A70-3E46-419D-B491-DFB5A6D88A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireAppSemanticKernel.ServiceDefaults", "AspireAppSemanticKernel.ServiceDefaults\AspireAppSemanticKernel.ServiceDefaults.csproj", "{278A8EEB-9272-9039-FD55-3D81FF25DC75}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSemanticKernel", "WebApiSemanticKernel\WebApiSemanticKernel.csproj", "{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC7E3A70-3E46-419D-B491-DFB5A6D88A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC7E3A70-3E46-419D-B491-DFB5A6D88A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC7E3A70-3E46-419D-B491-DFB5A6D88A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC7E3A70-3E46-419D-B491-DFB5A6D88A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{278A8EEB-9272-9039-FD55-3D81FF25DC75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{278A8EEB-9272-9039-FD55-3D81FF25DC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{278A8EEB-9272-9039-FD55-3D81FF25DC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{278A8EEB-9272-9039-FD55-3D81FF25DC75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B6E3DA30-F821-40E4-9B57-343B4C9F426B}
+	EndGlobalSection
+EndGlobal

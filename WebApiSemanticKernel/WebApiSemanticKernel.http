@@ -1,0 +1,6 @@
+@WebApiSemanticKernel_HostAddress = http://localhost:5084
+
+GET {{WebApiSemanticKernel_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
