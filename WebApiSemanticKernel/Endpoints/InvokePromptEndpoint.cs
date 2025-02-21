@@ -17,7 +17,8 @@ public class InvokePromptEndpoint : IEndpoint
         ) =>
         {
             string prompt = $"""
-                You are a helpful assistant. Answer the question as truthfully as possible, and if you don't know the answer, say "I don't know".
+                You are a helpful assistant. Answer the question as truthfully as possible, 
+                and if you don't know the answer, say "I don't know".
                 Question: {invokePromptRequest.Question}
                 Answer:
                 """;

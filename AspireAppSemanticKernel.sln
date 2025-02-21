@@ -1,6 +1,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.13.35818.85 d17.13
+VisualStudioVersion = 17.13.35818.85
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspireAppSemanticKernel.AppHost", "AspireAppSemanticKernel.AppHost\AspireAppSemanticKernel.AppHost.csproj", "{DC7E3A70-3E46-419D-B491-DFB5A6D88A54}"
 EndProject
@@ -10,8 +10,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiSemanticKernel", "Web
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
 	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
 		readme.md = readme.md
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureSearchDataImporter", "AzureSearchDataImporter\AzureSearchDataImporter.csproj", "{2448DCEC-ABD5-4838-B679-A30CC3BA1CC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KernelMemoryRAG", "KernelMemoryRAG\KernelMemoryRAG.csproj", "{55D565AD-9D2B-456C-9423-E6747DAE3FB9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,6 +36,14 @@ Global
 		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7306868E-0C2C-CD4D-350C-00D3EBA5FE60}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2448DCEC-ABD5-4838-B679-A30CC3BA1CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2448DCEC-ABD5-4838-B679-A30CC3BA1CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2448DCEC-ABD5-4838-B679-A30CC3BA1CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2448DCEC-ABD5-4838-B679-A30CC3BA1CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55D565AD-9D2B-456C-9423-E6747DAE3FB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55D565AD-9D2B-456C-9423-E6747DAE3FB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55D565AD-9D2B-456C-9423-E6747DAE3FB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55D565AD-9D2B-456C-9423-E6747DAE3FB9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
