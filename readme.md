@@ -5,8 +5,12 @@
 ```shell
 dotnet user-secrets init
 dotnet user-secrets set "AzureOpenAI:ChatDeploymentName" "gpt-4o"
+dotnet user-secrets set "AzureOpenAI:EmbeddingDeploymentName" "text-embedding-ada-002"
 dotnet user-secrets set "AzureOpenAI:Endpoint" "https://xyz.openai.azure.com/"
 dotnet user-secrets set "AzureOpenAI:ApiKey" ""
+
+dotnet user-secrets set "AzureAISearch:Endpoint" ""
+dotnet user-secrets set "AzureAISearch:ApiKey" ""
 ```
 
 ## Docs

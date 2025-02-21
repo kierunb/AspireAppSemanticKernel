@@ -1,3 +1,6 @@
+using Azure;
+using Microsoft.Extensions.Azure;
+using Microsoft.Extensions.Configuration;
 using Microsoft.SemanticKernel;
 using Scalar.AspNetCore;
 using WebApiSemanticKernel.Extensions;
@@ -10,10 +13,24 @@ builder.AddServiceDefaults();
 builder.Services.AddOpenApi();
 builder.Services.AddEndpoints(typeof(Program).Assembly);
 
+// SearchClient
+builder.Services.AddAzureClients(config =>
+{
+    config.AddSearchClient(new Uri(builder.Configuration["AzureAISearch:Endpoint"]!),
+        indexName: "glossary",
+        new AzureKeyCredential(builder.Configuration["AzureAISearch:ApiKey"]!));
+});
+
 #region Semantic Kernel
 
 builder.Services.AddAzureOpenAIChatCompletion(
     deploymentName: builder.Configuration["AzureOpenAI:ChatDeploymentName"]!,
+    endpoint: builder.Configuration["AzureOpenAI:Endpoint"]!,
+    apiKey: builder.Configuration["AzureOpenAI:ApiKey"]!
+);
+
+builder.Services.AddAzureOpenAITextEmbeddingGeneration(
+    deploymentName: builder.Configuration["AzureOpenAI:EmbeddingDeploymentName"]!,
     endpoint: builder.Configuration["AzureOpenAI:Endpoint"]!,
     apiKey: builder.Configuration["AzureOpenAI:ApiKey"]!
 );
@@ -28,7 +45,7 @@ builder.Services.AddSingleton<KernelPluginCollection>((serviceProvider) =>
 
 builder.Services.AddTransient((serviceProvider) => {
     KernelPluginCollection pluginCollection = serviceProvider.GetRequiredService<KernelPluginCollection>();
-    pluginCollection.AddFromType<DatePlugin>();
+    //pluginCollection.AddFromType<DatePlugin>();
     return new Kernel(serviceProvider, pluginCollection);
 });
 
